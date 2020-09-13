@@ -30,6 +30,10 @@ public class BoatController {
 		this.repository = repository;
 	}
 	
+	public Boat getBoatById(long id) {
+		return repository.findById(id).get();
+	}
+	
 	@GetMapping(value="/boats")
 	public List<Boat> getAllBoats() {
 		return repository.findAll();
