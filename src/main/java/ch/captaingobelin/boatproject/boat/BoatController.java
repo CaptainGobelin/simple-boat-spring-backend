@@ -47,10 +47,7 @@ public class BoatController {
 	
 	@PutMapping("/{id}/update")
 	public Boat updateBoat(@RequestBody Boat boat, @PathVariable Long id) {
-		Boat toUpdateBoat = repository.findById(id).orElse(null);
-		if (toUpdateBoat == null ) {
-			return addBoat(boat);
-		}
+		Boat toUpdateBoat = repository.findById(id).orElse(new Boat());
 		toUpdateBoat.setName(boat.getName());
 		toUpdateBoat.setDescription(boat.getDescription());
 		return repository.save(toUpdateBoat);
