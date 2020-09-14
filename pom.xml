@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ch.captaingobelin</groupId>
-	<artifactId>boatProject</artifactId>
+	<artifactId>boat_project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boatProject</name>
+	<name>boat_project</name>
 	<description>Simple Boat CRUD REST</description>
 
 	<properties>
